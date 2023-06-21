@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      background-color:black ;
+      display: grid;
+      grid-template-columns:320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px; 
+    }
+    .one{
+      background-color: #E72F24;
+    }
+    .greyy{
+      background-color: #F0F1EC;
+    }
+    .two{
+      grid-column: span 3;
+    }
+    .three{
+      grid-row: span 2;
+    }
+    .four{
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .five{
+      background-color: #004592;
+      border-bottom: 8px solid #000;
+    }
+    .six{
+      grid-row: span 2;
+    }
+    .eight{
+      background-color:#F9D01E ;
+    }
+    .nine{
+      background-color: #232629 ;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- consider them the seperate boxes -->
+<div class="container">
+  <div class="one"></div>               <!-- item1 -->
+  <div class="two greyy"></div>         <!-- item2 -->
+  <div class="three greyy"> </div>       <!-- item3 -->
+  <div class="four greyy"> </div>        <!-- item4 -->
+  <div class="five">  </div>              <!-- item5 -->
+  <div class="six greyy"> </div>         <!-- item6 -->
+  <div class="seven greyy"> </div>       <!-- item7 -->    
+  <div class="eight">  </div>             <!-- item8 -->
+  <div class="nine"></div>               <!-- item9 --> 
+</div>
+</body>
+
+</html>
